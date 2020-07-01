@@ -1,0 +1,32 @@
+
+#Omar{
+     /*change the padding on one line*/
+    /*top, right, bottom, left*/
+    /*top, left&right,bottom*/
+    /*top&bottom, left&right*/
+    padding: 20px;
+    
+    /*how to define margins*/
+    /*margin: top right bottom left
+    margin: top-right, left, bottom
+    margin: top-bottom, left&right
+    */
+    margin: 10px;
+    
+    
+    border-top: 5px solid #00308F;
+    border-bottom: 4px dotted #00308F;
+    
+    border-left: 5px dashed #00308F;
+    border-right: 5px double #00308F;
+    
+    /*make the background of a picture repeat in the horizontal plane*/
+    /*background: #F2f3F4 url("repeat.jpeg") repeat-x;*/
+    
+    /*make the background of a picture repeat in the vertical plane
+    background: #F2f3F4 url("repeat.jpeg") repeat-y;
+    */
+    background: #F2f3F4 url("repeat.jpeg") no-repeat;
+
+}
+
