@@ -1,0 +1,60 @@
+/*when importing a css doc they should be the very first in your stylesheet*/
+@import "heading.css";
+@import "paragraph.css";
+
+/*To change everything in particular like text color, or font or font-family*/
+*{font-family: "Arial Black" Gadget, sans-serif;}
+
+/*To change everything within a div, or font or font-family*/
+div*{font-family: "Comic Sans MS", cursive, sans-serif;}
+
+/*To change the style of says the listing of sites we put their classname*/
+.sitelink{
+    font-family: Georgia, serif;
+}
+
+/*To change style of an id I put the hash symbol always*/
+#the-best-quote
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:red;
+}
+
+/*To change the sitelink only inside paragraph*/
+p.sitelink
+{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color:black;
+}
+
+span#tonyparker
+{
+    font-family: "Times New Roman", Times, serif;
+    color:blue;
+}
+
+#BEST-PL ol li
+{
+    color:green;
+}
+#BEST-PL ul li
+{
+    color:purple;
+}
+h3 + p{
+    font-style: bold;
+}
+
+h3 + p>a{
+    color: grey;
+}
+
+p[class]
+{
+    background:blue;
+}
+p[id]
+{
+    background:none;
+}
+*[alt~="Python"] {background:purple;}
