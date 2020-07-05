@@ -1,0 +1,53 @@
+/*
+Browser Prefixes:
+moz: Firefox
+ms: Internet Explorer
+o: Opera
+webkit: Safari/Chrome
+*/
+
+div#div1, div#div2, div#div3, div#div4{
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	border: 3px solid black;
+}
+
+/* I will create a gradient
+gradient(direction, colorstops shifting)*/
+
+#div1{
+	background: -moz-linear-gradient(45deg, red, yellow, blue);
+	background: -webkit-linear-gradient(45deg, red, yellow, blue);
+	background: -o-linear-gradient(45deg, red, yellow, blue);
+	background: -ms-linear-gradient(45deg, red, yellow, blue);
+	background: linear-gradient(45deg, red, yellow, blue);
+}
+	
+#div2{
+	background: -moz-linear-gradient(left, top, red 20%, yellow 30%, blue 60%);
+	background: -webkit-linear-gradient(left, top, red 20%, yellow 30%, blue 60%);
+	background: -o-linear-gradient(left, top, red, yellow, blue);
+	background: -ms-linear-gradient(left, top, red, yellow, blue);
+	background: linear-gradient(left, top, red, yellow, blue);
+}
+
+/* I can repeat gradients*/
+#div3{
+	background: -moz-repeating-linear-gradient(left, top, red 20%, yellow 30%, blue 60%);
+	background: -webkit-repeating-linear-gradient(left, top, red 20%, yellow 30%, blue 60%);
+	background: -o-repeating-linear-gradient(left, top, red 20%, yellow 30%, blue 60%);
+	background: -ms-repeating-linear-gradient(left, top, red 20%, yellow 30%, blue 60%);
+	background: repeating-linear-gradient(left, top, red 20%, yellow 30%, blue 60%);
+}
+
+
+/* radial gradients*/
+#div4{
+	background: -moz-radial-gradient(red 20%, yellow 30%, blue 60%);
+	background: -webkit-radial-gradient(red 20%, yellow 30%, blue 60%);
+	background: -o-radial-gradient(red 20%, yellow 30%, blue 60%);
+	background: -ms-radial-gradient(red 20%, yellow 30%, blue 60%);
+	background: radial-gradient(red 20%, yellow 30%, blue 60%);
+}
+
