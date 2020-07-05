@@ -1,0 +1,16 @@
+div#div14, div#div15{
+	height: 92px;
+	width: 80px;
+	float: left;
+	background-image: url(nttlogo.png);
+}
+
+/* I want to create a layered background 200% for both horizontal and vertical. This is zoomed in at 200*/
+div14{
+	background-size: 200% 200%;
+}
+
+/* I want to create a 2nd version layered background 50% for both horizontal and vertical. This is zoomedin for 50%*/
+div15{
+	background-size: 50% 50%;
+}
