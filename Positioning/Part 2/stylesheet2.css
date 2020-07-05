@@ -1,0 +1,51 @@
+#top-left{
+position: absolute;
+ 	background-color:#89cff0;
+	border: 0.1em solid red;
+	width:200px;
+	height:100px;
+	z-index:4;
+}
+
+/*Place in bottom right*/
+#bottom-right-tl-parent{
+	background-color: #dbe9f4;
+	position: absolute;
+	bottom: 0px;
+	right:0px;
+}
+
+/*Place in top right*/
+#top-right{
+	top:0px;
+	right:0px;
+	height:100px;
+	width:200px;
+	position: absolute;
+	border: 0.1em solid black;
+	background-color: #89cff0;
+}
+
+/*Place in bottom left*/
+#bottom-left-tl-parent{
+	background-color: #dbe9f4;
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+}
+
+/*Targetting the paragraph that has the id fixed-pos. Now if I scroll it will remain at the top no matter what*/
+#fixed-pos{
+	position: fixed;
+	top:0px;
+	left:0px;
+
+	/*to fill up the whole entire top of the screen*/
+	width: 100%;
+
+	background: #dbe9f4
+	border:0.1em solid green;
+
+	/*to be on the top of the screen*/
+	margin: 0px;
+}
