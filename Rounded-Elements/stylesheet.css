@@ -1,0 +1,23 @@
+div#div11, div#div12, div#div13{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border: 3px solid black;
+	text-align: center;
+}
+
+div11{
+	/* This will create a rounded rectangle*/
+	border-radius: 30px;
+}
+
+div12{
+	/* This will create a circle*/
+	border-radius: 50px;
+}
+
+div13{
+	/* This will rounded only the top right*/
+	border-top-right-radius: 30px;
+}
+
