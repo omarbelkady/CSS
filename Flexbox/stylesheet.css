@@ -1,0 +1,50 @@
+div #lorem{
+	height: 150px;
+	width: 450px;
+	border: 2px solid black;
+	overflow: hidden;
+	/*overflow means if the text is bigger than the area allocated then we want the overflow to be hidden*/
+}
+
+/*take the information and sort it into columns*/
+div #lorem{
+	-webkit-columns: 4;
+	-ms-columns: 4;
+	-o-columns:4;
+	-moz-columns: 4;
+	columns: 4;
+}
+
+/*Put lines in between the columns*/
+div #lorem{
+	-webkit-column-rule: 2px dashed black;
+	-ms-columns: 2px dashed black;
+	-o-columns: 2px dashed black;
+	-moz-columns: 2px dashed black;
+	columns: 2px dashed black;
+}
+
+/*Specify the space between the containers*/
+#container{
+	height: 150px;
+	width: 450px;
+	border: 2px solid black;
+}
+
+/*Creat flexible boxes for the content*/
+#container{
+	display: -webkit-box;
+}
+
+/*Focus on the divs that are within the container*/
+#div1{
+	-webkit-box-flex: 2;
+}
+
+#div2{
+	-webkit-box-flex: 2;
+}
+
+#div3{
+	-webkit-box-flex: 3;
+}
