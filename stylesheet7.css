@@ -1,0 +1,33 @@
+div#div6, div#div7, div#div8, div#div9, div#div10 {
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+
+#div6{
+	/* This will create a bluish color*/
+	background: rgb(0, 0,205);
+}
+
+#div7{
+	/* This will create a bluish color*/
+	background: rgb(0, 0,205);
+	opacity: .5%;
+	/*div7 opacity and rgba’s 4th argument is the same thing*/
+}
+
+#div8{
+	/* This will create a bluish color*/
+	background: rgba(0, 0,205,0.5);
+}
+
+/*Saturation Lighteness*/
+#div9{
+	/* This will create a bluish color, 205 and 100% for saturation and lightness is 50%*/
+	background: hsl(205, 100%,0.5);
+}
+
+#div10{
+	/* This will create a bluish color, 205 and 100% for saturation and lightness is 50%*/
+	background: hsl(205, 100%, 50%, 0.5);
+}
