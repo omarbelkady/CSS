@@ -1,0 +1,68 @@
+/*Anytime a link is hovered over I want to change color to blue*/
+a:hover{color: green;}
+/*Anytime we come across an active link change the color to red*/
+a:active{color: red;}
+/*Anytime we come across a link we previously visited to */
+a:active{color: #989898;}
+
+/*I want to change the body tag background color*/
+body{
+	background: #5d8aa8;
+}
+
+/*I want to make any element within a div wrapper automatically centered and change the background color*/
+body{
+	margin: 0 auto;
+	background: white;
+	width: 750px;
+	height: 1500px;
+}
+
+/*The link to twitter facebook and instagram will now be pushed down*/
+header{
+	display: block;
+	padding-bottom: 10px;
+}
+
+/*Style My Website Logo*/
+#websiteLogo{
+	/*padding: top right bottom left. The will push it down right*/
+	padding:5px 0px 0px 5px;
+}
+
+/*I want to style my navigation bar. They have an id of horzNav*/
+#horzNav{
+	/*display them as block element*/
+	display: block;
+	padding: 5px 20px 5px 0px;
+	background: orange;
+}
+
+/*I want to remove the underline of the links in the Nav Bar*/
+#horzNav a{
+	/*display them as block element*/
+	text-decoration: none;
+	padding: 0px 0px 0px 20px;
+	color: white;
+}
+
+/*I want to add a hover to the links Nav Bar*/
+#horzNav a:hover{
+	color: green;
+}
+
+/*I want to style the content of the page. Move everything to the left side of the screen*/
+main{
+	padding: 10px 10px 20px 20px;
+	float: left;
+	width:600px;
+}
+
+/*I want to style the sidebar*/
+sidebar{
+	padding: 20px 10px 0px 10px;
+	float: right;
+	width: 150px;
+	height:auto;
+	background: #DBE9F4;
+}
