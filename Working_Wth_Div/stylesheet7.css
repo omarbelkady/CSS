@@ -1,0 +1,22 @@
+div#div1, div#div2, div#div3{
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	border: 3px solid black;
+}
+
+/* I will create a drop shadow on the div*/
+#div1{
+	/* box-shadow: right: down: blur-amount: size-of-shadow: shadow-color:*/
+	box-shadow: 5px 5px 5px 2px orange;
+}
+
+#div2{
+	/* box-shadow: right: down: blur-amount: size-of-shadow: shadow-color:  inner-shadow:*/
+	box-shadow: 5px 5px 5px 2px purple inset;
+}
+
+#div3{
+	/* box-shadow: set first two numbers to 0 to create a shadow-effect: size-of-shadow: shadow-color:*/
+	box-shadow: 0px 0px 10px 5px orange;
+}
