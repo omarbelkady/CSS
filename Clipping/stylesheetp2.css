@@ -1,0 +1,29 @@
+/*targetting the first car image*/
+div.little-car-clip{
+ 	position:absolute;
+	width:100px;
+/*clip:Rect(top,right,down,left)*/
+	clip:rect(0px, 50px, 50px, 0px);
+}
+
+div.little-car-small{
+	/*I want to shrink the size*/
+	height:51px;
+}
+
+div.overflow-visible{
+	top:100px;
+	overflow:visible;
+}
+
+/*Hidden part will not show*/
+div.overflow-hidden{
+	top:200px;
+	overflow:hidden;
+}
+
+/*hide most of the image but will allow us to scroll the full image*/
+div.overflow-scroll{
+	top:300px;
+	overflow:scroll;
+}
