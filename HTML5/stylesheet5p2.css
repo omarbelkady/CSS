@@ -1,0 +1,228 @@
+/*Anytime a link is hovered over I want to change color to blue*/
+a:hover{color: green;}
+/*Anytime we come across an active link change the color to red*/
+a:active{color: red;}
+/*Anytime we come across a link we previously visited to */
+a:active{color: #989898;}
+
+/*I want to change the body tag background color*/
+body{
+	background: #5d8aa8;
+}
+
+/*I want to make any element within a div wrapper automatically centered and change the background color*/
+body{
+	margin: 0 auto;
+	background: white;
+	width: 750px;
+	height: 1500px;
+}
+
+/*The link to twitter facebook and instagram will now be pushed down*/
+header{
+	display: block;
+	padding-bottom: 10px;
+}
+
+/*Style My Website Logo*/
+#websiteLogo{
+	/*padding: top right bottom left. The will push it down right*/
+	padding:5px 0px 0px 5px;
+}
+
+/*I want to style my navigation bar. They have an id of horzNav*/
+#horzNav{
+	/*display them as block element*/
+	display: block;
+	padding: 5px 20px 5px 0px;
+	background: orange;
+}
+
+/*I want to remove the underline of the links in the Nav Bar*/
+#horzNav a{
+	/*display them as block element*/
+	text-decoration: none;
+	padding: 0px 0px 0px 20px;
+	color: white;
+}
+
+/*I want to add a hover to the links Nav Bar*/
+#horzNav a:hover{
+	color: green;
+}
+
+/*I want to style the content of the page. Move everything to the left side of the screen*/
+main{
+	padding: 10px 10px 20px 20px;
+	float: left;
+	width:600px;
+}
+
+/*I want to style the sidebar*/
+#sidebar{
+	padding: 20px 10px 0px 10px;
+	float: right;
+	width: 150px;
+	height:auto;
+	background: #DBE9F4;
+}
+
+h2{
+	font-size: 2em;
+}
+
+/*I want to style the paragraphs*/
+
+#parag-1{
+	text-align: left;
+	word-spacing: .5em;
+}
+
+#parag-2{
+	text-align: right;
+}
+
+#parag-3{
+	text-align: center;
+}
+	
+#parag-4{
+	text-indent: 2em;
+}
+	
+#parag-5{
+	letter-spacing: .5 em;
+}
+
+/*To make sure nothing shows up on our footer*/
+footer{
+	clear: both;
+	background: black;
+	color: yellow;
+	padding: 11px;
+}
+
+#sidebar-list{
+	list-style-type: lower-latin;
+	/* define how the list markers should be set up inside of the list item content boxes*/
+	list-style-position: outside;
+}
+
+#sidebar-list-2{
+	list-style-type: upper-roman;
+	/* this list is indented further inside than sidebar-list*/
+	list-style-position: inside;
+}
+
+/* To show data before certain elements*/
+p#parag-1:before{
+	content: “$”;
+}
+
+/*To style any h3 header tag*/
+h3{
+	font-size: .9em;
+	counter-increment: num;
+}
+
+h4{
+	font-size: .7em;
+	/*say I want to increment by 2*/
+	counter-increment: sub 2;
+}
+
+/*Define how they are going to work*/
+h3:before{
+	content: counter(num) “ ”;
+}
+
+h4:before{
+	content: counter(num) “.” counter(sub) “ ”;
+}
+
+/*Inside of paragraph 2 I want to have the first letter be capitalized and larger than all of the letters.*/
+parag-2:first-letter{
+	font-size: 25pt;
+}
+
+/*Inside of paragraph 3 I want the first line of text to have a background color of purple.*/
+parag-3:first-line{
+	background-color: purple;
+}
+
+/*Inside of the first span which is the first-child I want to have a background color of blue.*/
+span:first-child{
+	background: blue;
+}
+
+/*I want to modify the last child of every paragraph element.*/
+p:last-child{
+	background-color:  #fae7b5;
+}
+
+/*The color the 2nd occurence of span tag within  your paragraph element.*/
+span:nth-child(2){
+	background-color:  #fae7b5;
+}
+
+/*To have a hover effect on all of your h3 tags*/
+h3:hover{
+	background-color:  green;
+}
+
+/*I have a span with the id common quote and I want the cursor to change*/
+#common-quote{
+	cursor: pointer;
+}
+
+/*I want to draw a boxed outline around paragraph 4*/
+#parag-4{
+	outline: 2px solid blue;
+}
+
+/*I want to draw a border around paragraph 5*/
+#parag-5{
+	border: 2px solid black;
+}
+
+/*I want to style the buttons*/
+dl#buttons{
+	width: 150px;
+}
+
+dt.site-button{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+dt.site-button a{
+	display: block;
+	color: white
+	text-decoration: none
+}
+
+dt.site-button a:link{
+	background: blue;
+	border: 5px solid blue;
+}
+
+/*Whenever I hover over the links they change to green*/
+dt.site-button a:hover{
+	background:green;
+	border: 5px solid blue;
+}
+
+
+/*hiding the pictures when we don’t hover over the small items links*/
+dl:kids-pics a img.hidden{
+	visibility:hidden;
+	position: absolute;
+	left:110px;
+	top:400px;
+}
+
+/*the pictures appear in large when we hover over the small items links*/
+dl:kids-pics a:hover img.hidden{
+	visibility:visible;
+}
+
