@@ -1,0 +1,20 @@
+#relative-1{
+	background-color: #dbe9f4;
+	border: 0.1em solid blue;
+	height: 150px;
+}
+
+#relative-2{
+	position: relative
+	left:20px;
+	top: 30px;
+	width: 302px;
+	background-color: orange;
+	border: 0.1em solid blue;
+}
+
+/*I have an image embedded within a paragraph I want to style it. I search for the source value*/
+img[src="repeat.jpg"]{
+	float: left;
+	padding: 11px;
+}
