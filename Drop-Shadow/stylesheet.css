@@ -1,0 +1,15 @@
+div#div4, div#div5{
+	height: 30px;
+	width: 30px;
+	font: 20pt Arial;
+}
+
+#div4{
+	text-shadow: 2px 2px 3px grey;
+}
+
+
+/* I will create a glow effect on the text shadow by inputing zeros*/
+#div5{
+	text-shadow: 0 0 3px blue;
+}
