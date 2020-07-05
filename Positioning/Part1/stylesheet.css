@@ -1,0 +1,30 @@
+#parent-div{
+    background: #B3bEb5;
+    border:0.1em solid green;
+}
+
+#default{
+    background: #DBE9F4;
+}
+
+#centered{
+    background: #89cff0;
+    width:40%;
+    margin:auto; /*equal amount of space on the right as the left*/
+}
+#center-text{
+    text-align: center;
+}
+/*I want to target a div called top-left*/
+#top-left{
+    background-color: #89cff0;
+    border: 0.1em solid blue;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    z-index:4;
+}
+
+#top-right{
+    
+}
