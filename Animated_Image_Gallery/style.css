@@ -26,4 +26,11 @@ h1{
 .image-box:hover{
 	flex-basis: 50%;
 }
-
+.active{
+	flex-basis:50%;
+}
+.image-gal:hover .active{
+	flex-basis: 0;
+}
+.image-box:nth-child(1):hover{
+	flex-basis:50%;
