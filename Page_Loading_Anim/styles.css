@@ -1,0 +1,163 @@
+body{
+	margin: 0;
+	--nav-load-time: 300ms;
+	--nav-link-load-time: 500ms;
+	/*It will take 0.8s for our site to load our header animation*/
+	--article-load-delay: calc(var(--nav-load-time)+var(--nav-link-load-time))
+}
+
+/*styling the navigation bar*/
+nav{
+	background-color: rgb(0,61,92);
+	color: white;
+	/*We gave our animation a name of nav-load and we give it a time*/
+	animation: nav-load var(--nav-load-time) ease-in;
+}
+
+nav ul{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav a{
+	color: inherit;
+	/*removes the underline below the links in our navigation bar*/
+	text-decoration: none;
+}
+
+nav li{
+	list-style: none;
+	padding: 10px;
+	margin: 0 10px;
+	animation-name: nav-link-load;
+	animation-duration: var(--nav-link-load-time);
+	animation-timing-function: ease-in;
+	animation-delay: var(--nav-load-time);
+	animation-fill-mode: forwards;
+	transform:scale(0);
+}
+
+nav li:first-child{
+	animation-name: nav-first-link-load;
+	transform: translateX(-1000%);
+}
+
+
+nav li:last-child{
+	animation-name: nav-last-link-load;
+	transform: translateX(1000%);
+}
+
+nav li:hover{
+	background-color: #FFFFFF44;
+}
+
+main{
+	/*This will push our text into the middle instead of it being
+	 * left justified*/
+	padding: 30px;
+}
+
+/*Animating our headers  we give our animation a name of article load
+ * and give it a duration of 300ms */
+h1{
+	animation: article-load 300ms ease-in var(--article-load-delay);
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
+}
+
+
+/*Animating our paragraphs we give our animation a name of article load
+ * and give it a duration of 300ms and make it load after our headers */
+p{
+	animation: article-load 300ms ease-in calc(--article-load-delay) + 210ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
+}
+
+
+/*How to create the animation we just name navload by using the keyframes keyword*/
+@keyframes nav-load{
+	/*What the animation looks like at the beginning*/
+	0%{
+		transform: translateY(-100%);
+	}
+
+	100%{
+		transform: translateY(0);
+	}
+}
+
+
+@keyframes nav-link-load{
+	/*What the animation looks like at the beginning*/
+	0%{
+		transform: scale(0%);
+	}
+
+	90%{
+		transform: scale(1.1);
+	}
+
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+@keyframes nav-first-link-load{
+	/*What the animation looks like at the beginning*/
+	0%{
+		/*put it at the complete side of the screen*/
+		transform: translateX(-1000%);
+	}
+
+	/*animate a litte over*/
+	90%{
+		transform: translateX(50%);
+	}
+
+	/*animate back to itself*/
+	100%{
+		transform: translateX(0);
+	}
+}
+
+/*animate but for the last link*/
+@keyframes nav-last-link-load{
+	/*What the animation looks like at the beginning*/
+	0%{
+		/*put it at the complete side of the screen*/
+		transform: translateX(1000%);
+	}
+
+	/*animate a litte over*/
+	90%{
+		transform: translateX(-50%);
+	}
+
+	/*animate back to itself*/
+	100%{
+		transform: translateX(0);
+	}
+}
+
+@keyframes article-load{
+	0%{
+		/*offset it by just a little bit*/
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+
+	100%{
+
+		/*offset it back to 0*/
+		transform: translateY(0px);
+		opacity: 1;
+	}
+
+
+
