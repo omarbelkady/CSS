@@ -1,1 +1,2 @@
-https://github.com/omarbelkady/CSS/issues/2#issue-679764583
+![CHEATSHEET OF CSS]
+(https://github.com/omarbelkady/CSS/issues/2#issue-679764583)
