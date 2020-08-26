@@ -102,15 +102,22 @@ direction of the flexible items
 }
 ```
 ### margin: space surrounding element use when move an element u,d,l,r and if width: fixed
+to center
+```css
+width: fixed;
+/*to center element horizontally assign the margin value to auto*/
 ```
-if width: fixed to center to element hor assign margin the value of auto
-```
+
 
 ### padding: space in between an element, edge of the container, border
 ```css
-padding: top, right bottom left
-padding: top, rightleft, bottom
-padding: topbottom, rightlef
+padding: top, right bottom left;
+padding: top, rightleft, bottom;
+padding: topbottom, rightlef;
+padding-bottom: ; 
+padding-top: ;
+padding-left: ;
+padding-right ;
 ```
 
 
