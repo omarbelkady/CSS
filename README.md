@@ -88,6 +88,7 @@ do/do not display backside of a tranformed element when facing user
 #nelan1{
 	background: url(alan_loves2.gif) left top no-repeat, url(alan_loves_compilers.gif) right bottom no-repeat, url(pintos.gif) left top repeat;
 	background size: 50px, 130px, auto
+}
 ```
 
 ### background-attachment
