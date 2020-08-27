@@ -41,6 +41,28 @@ whether or not to play the animation in reverse or no
 how long to play one cycle of anim val should in s or ms
 ```
 
+### animation-fill-mode: style of the element when animation is not playing
+```css
+/* none: no styles applied before or after animation plays
+* forwards: apply the style of the last keyframe if forwards then 100% if backwards then 0%
+* backwards: apply the style of the first keyframe if forwards then 0% if backwards then 100%
+* both: animation will follow the rules of both backwards and forwards
+*/
+```
+
+### example animation
+```css
+@keyframes myanim{
+0%{background-color: red;}
+25%{background-color: green;}
+50%{background-color: blue;}
+100%{background-color: orange;}
+}
+/*Remember the 100% or the animation will only display from 0 to 50 and not loop*/
+
+```
+
+
 ### animation-iteration-count
 ```
 how many times to play the animation before stop
@@ -59,6 +81,13 @@ run or pause the anim
 ### backface-visibility
 ```
 do/do not display backside of a tranformed element when facing user
+```
+
+### Have multiple background images with specific size and specific repeat
+```css
+#nelan1{
+	background: url(alan_loves2.gif) left top no-repeat, url(alan_loves_compilers.gif) right bottom no-repeat, url(pintos.gif) left top repeat;
+	background size: 50px, 130px, auto
 ```
 
 ### background-attachment
@@ -101,6 +130,29 @@ direction of the flexible items
 }
 ```
 
+## Links
+### link styling a ... possible styling of link, hover, visite and active
+```css
+a:link{
+	color: red; /*styling an unvisited link*/
+}
+
+a:visited{
+	color: purple; /*styling a visted link*/
+}
+
+a:hover{
+	color: green; /*When I hover my mouse over the link the hyperlink will turn green*/
+}
+
+a: active{
+	color: blue; /*The color the hyperlink changes to the moment I press it*/
+}
+```
+
+
+
+
 ## Lists Props
 ### list-style: display style for a list and list element(li)
 ```css
@@ -123,6 +175,24 @@ img{
 	opacity: 0.25;
 }
 ```
+
+## Video Sizing
+### Take up all the available space
+```css
+video{
+	width: 100%;/*Take up all the available space*/
+	height: auto;
+}
+```
+
+### Scale to size
+```css
+video{
+	max-width: 100%;
+	height: auto;
+}
+```
+
 
 
 ### padding: space in between an element, edge of the container, border
