@@ -210,12 +210,35 @@ padding-right ;
 
 ### Text-Styling
 
+#### Text Highlighting Color Change background color when we highlight and text color when we highlight
+```css
+::selection{
+	background: #ffe400; /*Changes the highlighter color to yellow*/
+	color: black; /*Text will be black when we highlight it with yellow background*/
+}
+```
+
 #### Direction: right to left(rtl), left to right(ltr), initial, inherit
 ```css
 p{
 	direction: rtl;
 }
 ```
+
+### HAVE AN IMAGE OR VIDEO WITHIN YOUR TEXT MAKE YOUR FONT THICK AND FONT SIZE BIG TO SEE THE IMAGE
+```css
+h1{
+	font-size: 15vh;
+	background-image: url(https://i.picsum.photos/id/1038/3914/5863);
+							/*squaresize/width/height*/
+	background-size: cover; /*make sure it goes through all the text and it doesn't repeat*/
+	background-clip: text;
+	--webkit-background-clip: text; /*This will cut the whole background and leave only the text*/
+	color: transparent; /*This will replace the color and make the background of the text be the background of an image or a video*/
+}
+
+```
+
 
 #### Tab-Size: length of tab character ..... integer(#of spaces) | length(width of tab) | initial(default) | inherit
 ```css
