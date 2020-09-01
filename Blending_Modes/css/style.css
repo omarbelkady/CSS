@@ -5,6 +5,10 @@ body{
 .background-image{
 	height: 100vh;/*vh=viewport height*/
 	width: 100vw;/*vw=viewport width*/
-	background-image: url(../img/superkid.jpg);
+	background-color: firebrick;
+	background: url(../img/superkid.jpg),linear-gradient(steelblue, firebrick);
+	/*To blend two images together background: url(), url();*/
 	background-size: cover;
+	background-blend-mode: overlay; /*normal, exclusion, hue,lighten, overlay ,screen(lightens),multiply(darkens), darken, color-dodge, saturation,luminosity,color, */
 }
+
