@@ -1,0 +1,10 @@
+body{
+	margin: 0;
+}
+
+.background-image{
+	height: 100vh;/*vh=viewport height*/
+	width: 100vw;/*vw=viewport width*/
+	background-image: url(../img/superkid.jpg);
+	background-size: cover;
+}
